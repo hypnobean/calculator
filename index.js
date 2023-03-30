@@ -1,16 +1,46 @@
 // Toggle Stylesheets
 const toggleButtons = document.querySelectorAll('input[type="radio"]');
-toggleButtons.forEach(toggleButton => {
-    toggleButton.addEventListener('change', toggleClickOutcome)
-})
+// toggleButtons.forEach(toggleButton => {
+//     toggleButton.addEventListener('change', toggleClickOutcome)
+//     themeName = toggleButton.getAttribute('id')
+//     console.log('themename: ' + themeName)
+// })
+
+for (i = 0; i < toggleButtons.length; i++) {
+    toggleButtons[i].addEventListener('input', function() {
+        themeName = this.id
+        console.log('theme name: ' + themeName)
+        toggleClickOutcome()
+    })
+}
+
 
 function toggleClickOutcome() {
-    let htmlHead = document.getElementsByTagName("head")[0];
-    let sheet = document.createElement("link");
-    sheet.rel = "stylesheet";
-    sheet.type = "text/css";
-    sheet.href="styles/" + this.value + ".css";
-    htmlHead.appendChild(sheet);
+    switch (themeName) {
+        case 'theme-1':
+            console.log('theme-1')
+            document.querySelector('#stylesheet-1').disabled = false
+            document.querySelector('#stylesheet-2').disabled = true
+            document.querySelector('#stylesheet-3').disabled = true
+            break;
+
+        case 'theme-2':
+            console.log('theme-2')
+            document.querySelector('#stylesheet-1').disabled = true
+            document.querySelector('#stylesheet-2').disabled = false
+            document.querySelector('#stylesheet-3').disabled = true
+            break;
+
+        case 'theme-3':
+            console.log('theme-3')
+            document.querySelector('#stylesheet-1').disabled = true
+            document.querySelector('#stylesheet-2').disabled = true
+            document.querySelector('#stylesheet-3').disabled = false
+            break;
+    
+        default:
+            break;
+    }
 }
 
 
