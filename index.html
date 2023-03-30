@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link id="stylesheet" rel="stylesheet" href="styles/style.css">
+  <link id="stylesheet-1" rel="stylesheet" href="styles/theme-1.css">
+  <link id="stylesheet-2" rel="stylesheet" href="styles/theme-2.css" disabled>
+  <link id="stylesheet-3" rel="stylesheet" href="styles/theme-3.css" disabled>  
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+<div class="container">
+  <div class="calc-body">
+    <div class="calc-head">
+    <div>
+      cacl
+    </div>
+    <div class="theme">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>Theme</div>
+      <div class="theme-toggle">
+        <input type="radio" name="toggle" id="theme-1" value="theme-1" checked="checked">
+        <label class="toggle" for="theme-1"><span class="dot" id="toggle-label-1"></span></label>
+        <input type="radio" name="toggle" id="theme-2" value="theme-2">
+        <label class="toggle" for="theme-2"><span class="dot" id="toggle-label-2"></span></label>
+        <input type="radio" name="toggle" id="theme-3" value="theme-3">
+        <label class="toggle" for="theme-3"><span class="dot" id="toggle-label-3"></span></label>
+        <span></span>  
+      </div>
+
+    </div>
+  </div>
+  <div class="display"></div>
+  <div class="cont-buttons">
+    <button class="number" value="7">7</button>
+    <button class="number" value="8">8</button>
+    <button class="number" value="9">9</button>
+    <button id="delete">DEL</button>
+    <button class="number" value="4">4</button>
+    <button class="number" value="5">5</button>
+    <button class="number" value="6">6</button>
+    <button class="operation" value="+">+</button>
+    <button class="number" value="1">1</button>
+    <button class="number" value="2">2</button>
+    <button class="number" value="3">3</button>
+    <button class="operation" value="-">-</button>
+    <button class="number" value=".">.</button>
+    <button class="number" value="0">0</button>
+    <button class="operation" value="/">/</button>
+    <button class="operation" value="*">x</button>
+    <button id="reset" class="span-two">RESET</button>
+    <button id="equals" class="span-two" value="=">=</button>
+  </div>
+  </div>
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Amanda Love</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
