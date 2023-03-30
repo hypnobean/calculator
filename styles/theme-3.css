@@ -1,0 +1,50 @@
+:root {
+    --very-dark-violet-1: hsl(268, 75%, 9%);
+    --very-dark-violet-2: hsl(268, 71%, 12%);
+    --dark-violet: hsl(281, 89%, 26%);
+    --vivid-magenta: hsl(285, 91%, 52%);
+    --pure-cyan: hsl(176, 100%, 44%);
+    --soft-cyan: hsl(177, 92%, 70%);
+    --very-dark-violet: hsl(268, 47%, 21%);
+    --dark-magenta: hsl(290, 70%, 36%);
+    --light-yellow: hsl(52, 100%, 62%);
+    --very-dark-blue: hsl(198, 20%, 13%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--very-dark-violet-1);
+    color: var(--light-yellow);
+}
+
+
+button {
+    background-color: var(--very-dark-violet);
+    border-bottom: 3px solid var(--dark-magenta);
+    color: var(--light-yellow);
+}
+
+.theme-toggle {
+    background-color: var(--very-dark-violet-2);
+}
+
+.display {
+    background-color: var(--very-dark-violet-2);
+    color: var(--light-yellow);
+}
+
+.cont-buttons {
+    background-color: var(--very-dark-violet-2);
+}
+
+#delete, #reset {
+    background-color: var(--dark-violet);
+    border-bottom: 3px solid var(--vivid-magenta);
+    color: var(--white);
+}
+
+#equals {
+    background-color: var(--soft-cyan);
+    border-bottom: 3px solid var(--pure-cyan);
+    color: var(--very-dark-blue);
+}   

@@ -1,0 +1,48 @@
+:root {
+    --light-grey: hsl(0, 0%, 90%);
+    --grayish-red: hsl(0, 5%, 81%);
+    --very-light-grey: hsl(0, 0%, 93%);
+    --dark-moderate-cyan: hsl(185, 42%, 37%);
+    --very-dark-cyan: hsl(185, 58%, 25%);
+    --orange: hsl(25, 98%, 40%);
+    --dark-orange: hsl(25, 99%, 27%);
+    --light-greyish-yellow: hsl(45, 7%, 89%);
+    --dark-greyish-orange: hsl(35, 11%, 61%);
+    --very-dark-greyish-yellow: hsl(60, 10%, 19%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--light-grey);
+    color: var(--very-dark-greyish-yellow);
+}
+
+
+button {
+    background-color: var(--light-greyish-yellow);
+    border-bottom: 3px solid var(--dark-greyish-orange);
+    color: var(--very-dark-greyish-yellow);
+}
+
+.theme-toggle {
+    background-color: var(--grayish-red);
+}
+
+.display {
+    background-color: var(--very-light-grey);
+    color: var(--very-dark-greyish-yellow);
+}
+
+.cont-buttons {
+    background-color: var(--grayish-red);
+}
+
+#delete, #reset {
+    background-color: var(--dark-moderate-cyan);
+    border-bottom: 3px solid var(--very-dark-cyan);
+}
+
+#equals {
+    background-color: var(--orange);
+    border-bottom: 3px solid var(--dark-orange);
+}   
